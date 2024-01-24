@@ -1,6 +1,6 @@
 SELECT
-  usr.full_name 'Nome',
-  COUNT(hps.user_id) 'Quantidade de músicas reproduzidas'
+  usr.full_name AS 'Nome',
+  COUNT(hps.user_id) AS 'Quantidade de músicas reproduzidas'
 FROM Trybefy.users AS usr
   INNER JOIN Trybefy.history_play_songs AS hps
     ON usr.id = hps.user_id
